@@ -29,7 +29,7 @@ switch (process.argv[2]) {
     break;
 
   default:
-    console.log("Commands to enter after node liri" + "\n" +
+    console.log("Please enter a valid command after node liri" + "\n" +
       "my-tweets" + "\n" +
       "spotify-this-song " + "'song name'" + "\n" +
       "movie-this " + "movie title inside quotations" + "\n" +
@@ -115,7 +115,7 @@ function movieThis() {
 
       console.log(movieResults);
 
-    } else if (!movie) {
+    } if (!movie) {
       movie = '"Mr. Nobody"';
     } else {
       console.log("Error: " + error);
